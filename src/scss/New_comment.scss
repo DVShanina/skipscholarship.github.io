@@ -1,0 +1,73 @@
+.New_comment {
+    display: flex;
+    flex-direction: column;
+    width: 464px;
+    height: 368px;
+    top: 0;
+    left: 0;
+    margin: 150px auto 150px auto;
+    border: 1px solid #BDBDBD;
+                
+    .New_comment_h1 {
+        font-family: 'Roboto Slab';
+        font-size: 22px;
+        color: #333333;
+        padding: 0 32px 0 32px;
+        margin-bottom: 24px;
+    }
+    .New_comment_form {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .New_comment_form_block {
+            display: flex;
+            flex-direction: column;
+                        
+            .New_comment_form_block_lable {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                color: #828282;
+            }
+            .New_comment_form_block_input {
+                width: 400px;
+                border: 1px solid #BDBDBD;
+            }
+            .New_comment_form_block_submit {
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-between;
+                align-items: center;
+                width: 400px;
+                
+                .New_comment_form_block_submit_lable {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #828282;
+                }
+                .New_comment_form_block_submit_button {
+                    background: #0073E6;
+                    width: 192px;
+                    height: 40px;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                  }
+            }
+         }
+    }
+}
+
+.New_comment_form_block_input_name {
+    height: 32px;
+}
+.New_comment_form_block_input_text {
+    height: 88px;
+}

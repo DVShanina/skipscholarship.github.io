@@ -1,0 +1,67 @@
+$padding: 0 104px 0 104px;
+
+.Details {
+    display: flex;
+    background-color: #E5E5E5;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    padding: $padding;
+    gap: 15px;
+    
+    .Detail {    
+            .Detail-info {
+            display: flex;
+            flex-direction: column;
+            // background-color: green;
+                        
+            .Detail-info_sum {
+                color: #828282;
+                height: 24px;
+                // background-color: red;  
+                margin-bottom: -10px;
+            }
+
+            .Detail-info_photo {
+                background-color: grey;
+                width: 384px;
+                height: 152px;
+                margin-top: 30px;
+            }
+
+            .Detail-info_Map {
+                background-color: grey;
+                width: 400px;
+                height: 400px;
+                margin-top: 30px;
+            }
+            .Detail-info_review {
+                color: #828282;
+                .Detail-info_review_context {
+                    background-color: white;
+                    border-color: #E5E5E5;
+                    width: 1300px;
+                    height: 80px;
+                }
+            }
+            .Detail-info_title {
+                display: flex;
+                justify-content: space-between;
+                .Detail-info_title_button {
+                    background: #0073E6;
+                    width: 192px;
+                    height: 32px;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
