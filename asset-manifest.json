@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/skipscholarship.github.io/static/css/main.9f0755ee.css",
+    "main.js": "/skipscholarship.github.io/static/js/main.8d5f3ac5.js",
+    "index.html": "/skipscholarship.github.io/index.html",
+    "main.9f0755ee.css.map": "/skipscholarship.github.io/static/css/main.9f0755ee.css.map",
+    "main.8d5f3ac5.js.map": "/skipscholarship.github.io/static/js/main.8d5f3ac5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f0755ee.css",
+    "static/js/main.8d5f3ac5.js"
+  ]
+}
