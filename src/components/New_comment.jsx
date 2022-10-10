@@ -1,9 +1,14 @@
 import React from "react";
-import {BrowserRouter, Route, Link } from "react-router-dom";
 
-export default function New_comment (){
+
+export default function New_comment (props){
+  if (!props.show) {
+    return null
+  }
   return (
-    <section className="New_comment">
+    <div className="modal" onClick={props.onClise}>
+    <section className="New_comment" onClick={e => e.stopPropagation()}>
+    <button onClick={props.onClose} className="New_comment_button_close">X</button>
       <h1 className="New_comment_h1">Оставить отзыв</h1>
       <form className="New_comment_form">
         <div className="New_comment_form_block">
@@ -22,5 +27,6 @@ export default function New_comment (){
         </div>
       </form>
     </section>
+    </div>
     )
 }
