@@ -1,3 +1,15 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 .New_comment {
     display: flex;
     flex-direction: column;
@@ -5,8 +17,21 @@
     height: 368px;
     top: 0;
     left: 0;
-    margin: 150px auto 150px auto;
     border: 1px solid #BDBDBD;
+    background-color: #FFFFFF;
+
+    .New_comment_button_close {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0,0,0,0);
+        border: none;
+        color: #BDBDBD;
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        margin-left: auto;
+        margin-bottom: -50px;
+         }
                 
     .New_comment_h1 {
         font-family: 'Roboto Slab';
@@ -14,6 +39,7 @@
         color: #333333;
         padding: 0 32px 0 32px;
         margin-bottom: 24px;
+        text-align: left;
     }
     .New_comment_form {
         padding-top: 0px;
@@ -30,6 +56,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 color: #828282;
+                text-align: left;
             }
             .New_comment_form_block_input {
                 width: 400px;

@@ -1,14 +1,16 @@
 import React from "react";
-import {BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Filteres from "./components/Filteres";
-import Edit from "./components/Edit";
-import Detail from "./components/Detail";
-import New_comment from "./components/New_comment";
+import RoutesPage from "./routes";
+
+// import {BrowserRouter, Route, Link, Routes } from "react-router-dom";
+// import Filteres from "./components/Filteres";
+// import Edit from "./components/Edit";
+// import Detail from "./components/Detail";
+// import New_comment from "./components/New_comment";
 
 function App() {
-  return (
-    <BrowserRouter>
-    <div className="Homepage">
+  return <div> <RoutesPage/> </div> }
+    
+    {/* <div className="Homepage">
       <header className="Homepage-header">
           <div className="Homepage-header_elem1">
               <Link to ="/">Прогуляй стипендию!</Link>
@@ -22,18 +24,6 @@ function App() {
           <Link to ="/Edit"> Добавить место </Link>
             </button>
            </header>
-    </div>
-
-    <div className="main-route-place">
-    <Routes>
-      <Route exact path='/' element={<Filteres/>}/>
-      <Route exact path='/Edit' element={<Edit/>}/>
-      <Route exact path='/Detail' element={<Detail/>}/>
-      <Route exact path='/New_comment' element={<New_comment/>}/>
-     </Routes>
-     </div>
-   </BrowserRouter>
-   );
-   }
-
-export default App;
+    </div> */}
+    
+ export default App;

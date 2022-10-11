@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import {BrowserRouter, Route, Link } from "react-router-dom";
+import New_comment from "./New_comment";
 
 export default function Detail(){
+  const [show, setShow] = useState(false)
+  
   return  ( 
     <section className="Edit">
       
@@ -30,9 +33,10 @@ export default function Detail(){
       <div className="Detail-info">
      <div className="Detail-info_title">
      <p className="Detail-info_title_name">Отзывы:</p>
-     <button className="Detail-info_title_button">
-     <Link to ="/New_comment"> Написать отзыв </Link>
-      </button>
+     <button className="Detail-info_title_button" onClick = {() => setShow(true)}> Написать отзыв
+     {/* <Link to ="/New_comment"> Написать отзыв </Link> */}
+     <New_comment onClose={() => setShow(false)} show={show}/>
+       </button>
        </div>
      <div className="Detail-info_review">
       <p className="Detail-info_review_name">Destroyer666</p>
