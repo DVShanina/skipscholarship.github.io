@@ -1,17 +1,15 @@
 import React from "react";
-import {BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import RoutesPage from "./routes";
+
+// import {BrowserRouter, Route, Link, Routes } from "react-router-dom";
 // import Filteres from "./components/Filteres";
 // import Edit from "./components/Edit";
 // import Detail from "./components/Detail";
 // import New_comment from "./components/New_comment";
-import EditPlace from "./pages/EditPlace";
-import PlaceDetail from "./pages/PlaceDetail";
-import PlaceList from "./pages/PlaceList";
-
 
 function App() {
-  return (
-    <BrowserRouter>
+  return <div> <RoutesPage/> </div> }
+    
     {/* <div className="Homepage">
       <header className="Homepage-header">
           <div className="Homepage-header_elem1">
@@ -27,16 +25,5 @@ function App() {
             </button>
            </header>
     </div> */}
-
-    <div className="main-route-place">
-    <Routes>
-      <Route exact path='/PlaceList' element={<PlaceList/>}/>
-      <Route exact path='/PlaceDetail' element={<PlaceDetail/>}/>
-      <Route exact path='/EditPlace' element={<EditPlace/>}/>
-      </Routes>
-     </div>
-   </BrowserRouter>
-   );
-   }
-
-export default App;
+    
+ export default App;
