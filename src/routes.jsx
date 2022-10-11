@@ -11,8 +11,8 @@ export default function RoutesPage() {
      <div className="main-route-place">
       <Routes>
         <Route exact path='/' element={<PlaceList/>}/>
-        <Route exact path='/place-detail' element={<PlaceDetail/>}/>
-        <Route exact path='/edit-place' element={<EditPlace/>}/>
+        <Route exact path='/place-detail/:placeId' element={<PlaceDetail/>}/>
+        <Route exact path='/edit-place/:placeId' element={<EditPlace/>}/>
         <Route exact path='*' element={<NotFound/>} />
         </Routes>
      </div>
