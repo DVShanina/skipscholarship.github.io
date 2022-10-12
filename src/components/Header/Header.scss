@@ -1,0 +1,64 @@
+$padding: 0 104px 0 104px;
+
+.header-block {
+    position: absolute;
+    width: 80vw;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    background: #4296EA;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10% 0 10%;
+    align-items: center;
+    height: 48px;  
+    gap: 2px;     
+    .header-block_link {
+        font-family: 'Roboto Slab';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+        width: 28%;
+        min-width: 100px;
+        line-height: 80%;
+        }    
+    .header-block_form {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 24%;
+        line-height: 80%;
+        min-width: 140px;
+        padding-left: 10px;
+        .header-block_form_input {
+            background: #0073E6;
+            border-style: none;
+            width: 40%;
+            height: 46px;
+            font-family: 'Roboto Slab';
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: center;
+            }
+        .header-block_form_lable{
+            padding: 0 5px 0 5px;
+        }
+        }
+    .header-block_button {
+        width: 13%;
+        height: 48px;
+        background: #0073E6;
+        border-style: none;
+        min-width: 65px;
+        line-height: 80%;
+        text-align: center;
+        }
+    }
+    
