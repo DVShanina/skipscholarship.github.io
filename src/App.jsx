@@ -8,6 +8,11 @@ import RoutesPage from "./routes";
 // import New_comment from "./components/New_comment";
 
 export default function App() {
-  return <RoutesPage/>  }
+  return (
+  <React.StrictMode>
+  <RoutesPage/>  
+  </React.StrictMode>
+  )
+  }
      
 

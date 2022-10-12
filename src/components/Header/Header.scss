@@ -1,64 +1,69 @@
-$padding: 0 104px 0 104px;
+$text-align: center;
+$color-button: #0073E6;
+$color-text: #FFFFFF;
+$second-font:'Roboto Slab';
+$line-height: 80%;
+$strong: 700;
+$normal: 400;
+$h1-size: 22px;
+$text-size: 14px;
 
-.header-block {
+.header {
+    color: $color-text;
     position: absolute;
     width: 80vw;
     height: 48px;
     left: 0px;
     top: 0px;
     background: #4296EA;
-    font-family: 'Roboto';
-    color: #FFFFFF;
-    font-style: normal;
+    padding: 0 10% 0 10%;
     display: flex;
     justify-content: space-between; 
-    padding: 0 10% 0 10%;
     align-items: center;
-    height: 48px;  
     gap: 2px;     
-    .header-block_link {
-        font-family: 'Roboto Slab';
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 35px;
+    &__link {
+        font-family: $second-font;
+        font-weight: $strong;
+        font-size: $h1-size;
+        line-height: $line-height;
         width: 28%;
-        min-width: 100px;
-        line-height: 80%;
+        min-width: 100px;  
         }    
-    .header-block_form {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
+    &__form {
+        font-weight: $normal;
+        font-size: $text-size;
+        text-align: $text-align;
+        line-height: $line-height;
         display: flex;
         align-items: center;
-        text-align: center;
         width: 24%;
-        line-height: 80%;
         min-width: 140px;
         padding-left: 10px;
-        .header-block_form_input {
-            background: #0073E6;
+        &__input {
+            background: $color-button;
+            font-family: $second-font;
+            color: $color-text;
+            font-weight: $strong;
+            font-size: $h1-size;
+            text-align: $text-align;
             border-style: none;
             width: 40%;
             height: 46px;
-            font-family: 'Roboto Slab';
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 22px;
-            text-align: center;
             }
-        .header-block_form_lable{
+        &__lable{
             padding: 0 5px 0 5px;
         }
         }
-    .header-block_button {
+    &__button {
+        font-weight: $normal;
+        background: $color-button;
+        line-height: $line-height;
+        text-align: $text-align;
+        color: $color-text;
         width: 13%;
         height: 48px;
-        background: #0073E6;
         border-style: none;
         min-width: 65px;
-        line-height: 80%;
-        text-align: center;
         }
     }
     

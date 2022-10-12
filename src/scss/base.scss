@@ -1,9 +1,9 @@
+$main-font: 'Roboto';
+
 body {
   padding: 0 10% 0 10%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +27,11 @@ input:focus {
 }
 
 button {
-  font-family: 'Roboto';
+  font-family: $main-font;
+}
+
+.NotFound {
+  color: black;
 }
 
      

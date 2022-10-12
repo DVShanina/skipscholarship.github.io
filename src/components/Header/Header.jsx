@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
- 
+import "./Header.scss"
+
 export default function Header() {
     return (
-        <header className="header-block">
-            <div className="header-block_link">
+        <header className="header">
+            <div className="header__link">
                 <Link to ="/">Прогуляй стипендию!</Link>
             </div>
-            <form className="header-block_form">
-                <label className="header-block_form_lable" for="header-block_form_input" >Размер стипендии </label> 
-                <input className="header-block_form_input" type="text" name="header-block_form_input" /> 
-                <p className="header-block_form_lable">₽</p>
+            <form className="header__form">
+                <label className="header__form__lable" for="header__form__input" >Размер стипендии </label> 
+                <input className="header__form__input" type="text" name="header__form__input" /> 
+                <p className="header__form__lable">₽</p>
             </form>
-            <button className="header-block_button">
-                <Link to ="/Edit"> Добавить место </Link>
-            </button>
+            <button className="header__button"> Добавить место </button>
         </header>
           )
     }
