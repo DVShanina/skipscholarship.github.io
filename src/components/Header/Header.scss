@@ -33,19 +33,19 @@
         margin-left: 20px;
         min-width: 140px;
         gap: 5px;
-        &__input {
-            background: $color-blue;
-            font-family: $second-font;
-            color: $color-text;
-            font-weight: $strong;
-            font-size: $h1-size;
-            text-align: $text-align;
-            border-style: none;
-            width: 22%;
-            height: 46px;
-            padding: 0 10px 0 10px;
-            }
-        }
+    }
+    &__input {
+        background: $color-blue;
+        font-family: $second-font;
+        color: $color-text;
+        font-weight: $strong;
+        font-size: $h1-size;
+        text-align: $text-align;
+        border-style: none;
+        width: 22%;
+        height: 46px;
+        padding: 0 10px 0 10px;
+    }
     &__button {
         font-weight: $normal;
         background: $color-blue;
@@ -59,6 +59,6 @@
         border-style: none;
         min-width: 65px;
         cursor: pointer;
-        }
+    }
     }
     

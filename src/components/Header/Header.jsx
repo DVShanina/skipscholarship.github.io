@@ -9,9 +9,9 @@ export default function Header() {
                 <Link to ="/">Прогуляй стипендию!</Link>
             </div>
             <form className="header__form">
-                <label className="header__form__lable" for="header__form__input" >Размер стипендии: </label> 
-                <input className="header__form__input" type="text" name="header__form__input" /> 
-                <span className="header__form__lable">₽</span>
+                <label className="header__label" for="header__input" >Размер стипендии: </label> 
+                <input className="header__input" type="text" name="header__input" /> 
+                <span className="header__label">₽</span>
             </form>
             <button className="header__button"> Добавить место </button>
         </header>
