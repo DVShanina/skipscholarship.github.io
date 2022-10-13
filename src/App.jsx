@@ -1,5 +1,5 @@
 import React from "react";
-import RoutesPage from "./routes";
+import Routes from "./routes";
 
 // import {BrowserRouter, Route, Link, Routes } from "react-router-dom";
 // import Filteres from "./components/Filteres";
@@ -10,7 +10,7 @@ import RoutesPage from "./routes";
 export default function App() {
   return (
   <React.StrictMode>
-  <RoutesPage/>  
+  <Routes/>  
   </React.StrictMode>
   )
   }
