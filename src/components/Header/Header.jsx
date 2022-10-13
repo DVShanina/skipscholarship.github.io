@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.scss"
+import "./Header.scss";
 
 export default function Header() {
     return (
@@ -9,9 +9,9 @@ export default function Header() {
                 <Link to ="/">Прогуляй стипендию!</Link>
             </div>
             <form className="header__form">
-                <label className="header__form__lable" for="header__form__input" >Размер стипендии </label> 
+                <label className="header__form__lable" for="header__form__input" >Размер стипендии: </label> 
                 <input className="header__form__input" type="text" name="header__form__input" /> 
-                <p className="header__form__lable">₽</p>
+                <span className="header__form__lable">₽</span>
             </form>
             <button className="header__button"> Добавить место </button>
         </header>

@@ -1,24 +1,16 @@
-$text-align: center;
-$color-button: #0073E6;
-$color-text: #FFFFFF;
-$second-font:'Roboto Slab';
-$line-height: 80%;
-$strong: 700;
-$normal: 400;
-$h1-size: 22px;
-$text-size: 14px;
+
+@import "/src/scss/variables.scss";
+@import "/src/scss/colors.scss";
 
 .header {
     color: $color-text;
-    position: absolute;
-    width: 80vw;
+    width: 100vw;
     height: 48px;
     left: 0px;
     top: 0px;
-    background: #4296EA;
-    padding: 0 10% 0 10%;
+    background: $color-light-blue;
     display: flex;
-    justify-content: space-between; 
+    justify-content:end;
     align-items: center;
     gap: 2px;     
     &__link {
@@ -26,7 +18,8 @@ $text-size: 14px;
         font-weight: $strong;
         font-size: $h1-size;
         line-height: $line-height;
-        width: 28%;
+        margin-right: auto;
+        margin-left: 5%;
         min-width: 100px;  
         }    
     &__form {
@@ -36,11 +29,12 @@ $text-size: 14px;
         line-height: $line-height;
         display: flex;
         align-items: center;
-        width: 24%;
+        justify-content: center;
+        margin-left: 20px;
         min-width: 140px;
-        padding-left: 10px;
+        gap: 5px;
         &__input {
-            background: $color-button;
+            background: $color-blue;
             font-family: $second-font;
             color: $color-text;
             font-weight: $strong;
@@ -49,21 +43,21 @@ $text-size: 14px;
             border-style: none;
             width: 40%;
             height: 46px;
+            padding: 0 10px 0 10px;
             }
-        &__lable{
-            padding: 0 5px 0 5px;
-        }
         }
     &__button {
         font-weight: $normal;
-        background: $color-button;
+        background: $color-blue;
         line-height: $line-height;
         text-align: $text-align;
         color: $color-text;
-        width: 13%;
+        font-size: $text-size;
+        margin-right: 5%;
         height: 48px;
         border-style: none;
         min-width: 65px;
+        cursor: pointer;
         }
     }
     

@@ -1,7 +1,6 @@
 $main-font: 'Roboto';
 
 body {
-  padding: 0 10% 0 10%;
   margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +22,7 @@ a {
 }
 
 input:focus {
-  outline: 1px solid black; 
+  outline:0px;
 }
 
 button {
