@@ -1,83 +1,36 @@
-$padding: 0 104px 0 104px;
+$main-font: 'Roboto';
 
 body {
   margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+  
+h2 {
+  margin-top: 100px;
+}
+    
+a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-.Homepage {
-position: absolute;
-width: 100%;
-height: 48px;
-left: 0px;
-top: 0px;
-background: #4296EA;
-font-family: 'Roboto';
-color: #FFFFFF;
-font-style: normal;
-    .Homepage-header {
-    display: flex;
-    justify-content: space-between; 
-    padding: $padding;
-    align-items: center;
-    height: 48px;
-    
-    .Homepage-header_elem1 {
-      font-family: 'Roboto Slab';
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 35px;
-     }
-    
-    .Homepage-header_elem2 {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      display: flex;
-      align-items: center;
-      gap:10px;
-           .Homepage-header_elem2-input{
-            background: #0073E6;
-            border-style: none;
-            width: 112px;
-            height: 46px;
-            font-family: 'Roboto Slab';
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 22px;
-            text-align: center;
-        }
-      }
-
-    .Homepage-header_elem3 {
-      width: 192px;
-      height: 48px;
-      background: #0073E6;
-      border-style: none;
-      }
-    }
+input:focus {
+  outline:0px;
 }
-   
-    h2{
-      margin-top: 100px;
-    }
-    
-    a {
-    text-decoration: none;
-    color: #FFFFFF;
-    }
 
-    input:focus {
-      outline: 1px solid black; 
-      }
+button {
+  font-family: $main-font;
+}
+
+.not-found {
+  color: black;
+}
 
      
