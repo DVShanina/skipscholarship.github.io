@@ -1,15 +1,10 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout/Layout";
 
   export default function PlaceList() {
     return  ( 
-      <React.Fragment> 
-        <section className="main">
-        <Header/>
-        <div className="content">PlaceList</div>
-        <Footer/>
-        </section>
-        </React.Fragment>
+        <Layout className="main">
+        <div className="content">PlaceList</div>   
+        </Layout>
       )
   }
