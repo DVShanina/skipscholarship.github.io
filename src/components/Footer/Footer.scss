@@ -1,11 +1,9 @@
 @import "/src/scss/variables.scss";
 
 .footer {
-    display: flex;
     color: $color-gray;
     font-size: 12px;
-    padding-top: 1%;
-    width: 100vw;
+    padding-top: 10px;
     background-color: $colot-light-gray;
     height: 90px;
     justify-self: end;

@@ -2,17 +2,12 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-class Layout extends React.Component {
-    render(){
-      return (
+export default function Layout ({ children }) {
+    return (
         <>
-          <section className="main">
           <Header />
-          <main className="content">{this.props.children}</main>
+          <div className="content"> {children} </div>
           <Footer />
-          </section>
         </>
       )
-    }
   }
-  export default Layout;
