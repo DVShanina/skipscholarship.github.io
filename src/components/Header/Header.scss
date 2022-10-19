@@ -3,35 +3,27 @@
 
 .header {
     color: $color-text;
-    width: 100vw;
-    height: 48px;
-    left: 0px;
-    top: 0px;
     background: $color-light-blue;
+    height: 48px;  
     display: flex;
-    justify-content:end;
     align-items: center;
-    gap: 2px;     
+    padding: 0 5% 0 5%;   
     &__link {
         font-family: $second-font;
         font-weight: $strong;
         font-size: $h1-size;
         line-height: $line-height;
         margin-right: auto;
-        margin-left: 5%;
-        min-width: 100px;  
         }    
     &__form {
-        font-weight: $normal;
         font-size: $text-size;
         text-align: $text-align;
         line-height: $line-height;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 20px;
-        min-width: 140px;
         gap: 5px;
+        padding: 0 5px 0 5px;
     }
     &__input {
         background: $color-blue;
@@ -42,21 +34,18 @@
         text-align: $text-align;
         border-style: none;
         width: 22%;
-        height: 46px;
+        height: 48px;
         padding: 0 10px 0 10px;
     }
     &__button {
-        font-weight: $normal;
         background: $color-blue;
         line-height: $line-height;
         text-align: $text-align;
         color: $color-text;
         font-size: $text-size;
         width: 192px;
-        margin-right: 5%;
         height: 48px;
         border-style: none;
-        min-width: 65px;
         cursor: pointer;
     }
     }

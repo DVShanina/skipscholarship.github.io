@@ -4,9 +4,8 @@
     color: $color-gray;
     font-size: 12px;
     padding-top: 10px;
-    background-color: $colot-light-gray;
+    border-top: 1px solid $color-light-gray;
     height: 90px;
-    justify-self: end;
     &__text {
         margin-left: 5%;
     }
