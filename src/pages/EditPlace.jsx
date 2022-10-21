@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Layout from "../components/Layout/Layout";
 
   export default function EditPlace() {
     return  ( 
-      <React.Fragment>
-        <Header/>
-        <h2>EditPlace</h2>
-        </React.Fragment> 
+        <Layout>
+        <div>EditPlace</div>   
+        </Layout>
       )
   }
 
