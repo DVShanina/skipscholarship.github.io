@@ -17,7 +17,7 @@ a {
   color: #FFFFFF;
 }
 
-input:focus {
+input:focus select:focus select:active {
   outline:0px;
 }
 
@@ -31,7 +31,8 @@ button {
 
 .content {
   display: flex;
-  padding: 5px 0 0 5%;
+  //width: 100vw;
+  // padding: 5px 0 0 5%;
   font-size: 16px;
   flex-grow: 1;
 }

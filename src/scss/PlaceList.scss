@@ -1,0 +1,38 @@
+@import "/src/scss/variables.scss";
+
+.filteres {
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    border-bottom: 1px solid $color-light-gray;
+    align-items: center; 
+    padding: 0 5% 0 5%;
+    font-size: $text-size;  
+    color: $color-gray;
+    gap: 30px;
+    &__group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+    &__select {
+        height: 32px;
+        border: 1px solid $color-midle-gray;
+        font-size: $text-size;
+        font-family: $main-font;
+        padding: 0 10px 0 10px;
+    }    
+    &__renge {
+        padding-top: 5px;
+    }                                                                              
+   }
+.filteres__group_grow1 {
+    flex-grow: 1;
+}
+
+.filteres__group_width {
+    width: 260px;
+}
+
+
+
