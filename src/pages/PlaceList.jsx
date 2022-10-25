@@ -9,14 +9,14 @@ import  RatingStars  from "../components/Rating/Rating";
     return  ( 
       <Layout>
         <section className="filteres">
-              <div className="filteres__group filteres__group_grow1">
+              <div className="filteres__group">
                 <Slider/>    
                              
                </div>
-              <div className="filteres__group filteres__group_width">
+              <div className="filteres__group filteres__group_260px">
                 <RatingStars/>               
                </div>
-              <div className="filteres__group filteres__group_width">
+              <div className="filteres__group filteres__group_260px">
                   <span className="filteres__lable">Где:</span>
                   <select className="filteres__select">
 	                       <option>Бар</option>

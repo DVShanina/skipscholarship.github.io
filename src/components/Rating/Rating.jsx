@@ -3,28 +3,16 @@ import { Rating } from 'react-simple-star-rating'
 
 export default function RatingStars() {
     const [rating, setRating] = useState(0)
-  
-    // Catch Rating value
-    const handleRating = (rate) => {
-      setRating(rate)
-  
-      // other logic
+    const handleChangeRating = (rate) => {
+    setRating(rate)
     }
-    // Optinal callback functions
-    const onPointerEnter = () => console.log('Enter')
-    const onPointerLeave = () => console.log('Leave')
-    const onPointerMove = (value, index) => console.log(value, index)
-  
+    
     return (
       <>
-      <span className="filteres__lable">Как:</span>
-      <div className="filteres__renge">
+      <span>Как:</span>
+      <div className="filteres__range">
           <Rating
-          onClick={handleRating}
-          onPointerEnter={onPointerEnter}
-          onPointerLeave={onPointerLeave}
-          onPointerMove={onPointerMove}
-          /* Available Props */
+          onClick={handleChangeRating}
           fillColor='#FF3333'
           size={22}
         />

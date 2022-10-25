@@ -3,28 +3,27 @@
 .horizontal-slider {
     width: 100%;
     height: 30px;
-    //background: yellow; 
   }
-.example-thumb {
+.thumb-slider {
     cursor: pointer;
     background: $color-light-blue;
     height: 24px;
     width: 8px;
     top: 6px;
   }
-.example-track {
+.track-slider{
     position: relative;
     background: $color-blue;
     top: 15px;
     height: 4px;
   }
-  .example-track.example-track-0 {
+  .track-slider-0 {
     background: $color-light-gray;
   }
-  .example-track.example-track-2 {
+  .track-slider-2 {
     background: $color-light-gray;
   }
-   .horizontal-slider .example-thumb {
+   .horizontal-slider .thumb-slider {
     outline: none;
   }
  
