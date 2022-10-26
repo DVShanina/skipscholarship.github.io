@@ -3,9 +3,9 @@ import ReactSlider from 'react-slider';
 import "./Slider.scss"
 
 export default function Slider() {
-    const [value, setValue] = useState([0,100])
+    const [value, setSliderPosition] = useState([0,100])
     const handleChangeValue = (valueNow) => {
-        setValue(valueNow)
+        setSliderPosition(valueNow)
 }
 return(
 <>
@@ -21,7 +21,7 @@ return(
  defaultValue={[0, 100]}
  ariaLabel={['Lower thumb', 'Upper thumb']}
  ariaValuetext={state => `Сколько: ${state.valueNow}`}
- onChange={handleChangeValue}
+ onChange={setSliderPosition}
 //  renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
  pearling
  minDistance={10}
@@ -29,7 +29,4 @@ return(
   </div>
   </>
  )
-
-
-
 }

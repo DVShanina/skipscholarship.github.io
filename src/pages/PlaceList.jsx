@@ -8,17 +8,17 @@ import  RatingStars  from "../components/Rating/Rating";
         
     return  ( 
       <Layout>
-        <section className="filteres">
-              <div className="filteres__group">
+        <section className="filters">
+              <div className="filters__slider">
                 <Slider/>    
                              
                </div>
-              <div className="filteres__group filteres__group_260px">
+              <div className="filters__rating">
                 <RatingStars/>               
                </div>
-              <div className="filteres__group filteres__group_260px">
-                  <span className="filteres__lable">Где:</span>
-                  <select className="filteres__select">
+              <div className="filters__place">
+                  <span className="filters__lable">Где:</span>
+                  <select className="filters__select">
 	                       <option>Бар</option>
 	                       <option>Кафе</option>
 	                       <option>Ресторан</option>

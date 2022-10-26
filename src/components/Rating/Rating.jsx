@@ -10,9 +10,9 @@ export default function RatingStars() {
     return (
       <>
       <span>Как:</span>
-      <div className="filteres__range">
+      <div className="filters__range">
           <Rating
-          onClick={handleChangeRating}
+          onClick={setRating}
           fillColor='#FF3333'
           size={22}
         />
