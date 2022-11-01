@@ -1,0 +1,43 @@
+@import "/src/scss/variables.scss";
+
+.place-card {
+    width: 90%;
+    height: 112px;
+    border: 1px solid $color-border-gray;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    &__name {
+        font-size: 18px; 
+        padding-bottom: 10px; 
+    }
+    &__ratingreview {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__rating {
+       display: flex;
+        color: $color-midle-gray; 
+    }
+    &__review {
+        color: $color-midle-gray;
+    }
+    &__check {
+        color: $color-midle-gray; 
+    }
+    &__sum{
+        color: black;
+    }
+    &__categoryaddress {
+        display: flex;
+        gap:5px;
+    }
+    &__category {
+        color: $color-midle-gray; 
+    }
+}
+
+

@@ -22,7 +22,6 @@ return(
  ariaLabel={['Lower thumb', 'Upper thumb']}
  ariaValuetext={state => `Сколько: ${state.valueNow}`}
  onChange={setSliderPosition}
-//  renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
  pearling
  minDistance={10}
   />
