@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/skipscholarship.github.io/static/css/main.71c26e47.css",
-    "main.js": "/skipscholarship.github.io/static/js/main.32a98785.js",
+    "main.css": "/skipscholarship.github.io/static/css/main.94adb935.css",
+    "main.js": "/skipscholarship.github.io/static/js/main.13438ebf.js",
     "index.html": "/skipscholarship.github.io/index.html",
-    "main.71c26e47.css.map": "/skipscholarship.github.io/static/css/main.71c26e47.css.map",
-    "main.32a98785.js.map": "/skipscholarship.github.io/static/js/main.32a98785.js.map"
+    "main.94adb935.css.map": "/skipscholarship.github.io/static/css/main.94adb935.css.map",
+    "main.13438ebf.js.map": "/skipscholarship.github.io/static/js/main.13438ebf.js.map"
   },
   "entrypoints": [
-    "static/css/main.71c26e47.css",
-    "static/js/main.32a98785.js"
+    "static/css/main.94adb935.css",
+    "static/js/main.13438ebf.js"
   ]
 }
