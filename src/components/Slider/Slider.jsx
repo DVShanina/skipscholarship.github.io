@@ -9,7 +9,7 @@ export default function Slider() {
 }
 return(
 <>
-<span>
+<span className="filters__label">
 Сколько: {value[0]}% - {value[1]}% стипендии
 </span>
 <div>

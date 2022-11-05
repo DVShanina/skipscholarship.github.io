@@ -7,7 +7,7 @@ import { YMaps, Map } from '@pbe/react-yandex-maps';
       <Map 
       defaultState={{ center: [54.19, 48.22], zoom: 9, }}
       width='100%'
-      height='624px'
+      height='590px'
       />
     </div>
   </YMaps>

@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import "./PlaceCard.scss";
 import RatingStars from "../Rating/Rating";
 import { Rating } from 'react-simple-star-rating'
+import edit from '../PlaceCard/edit.svg'
+import del from '../PlaceCard/delete.svg'
 
 export default function PlaceCard() {
     const [cards, setCards] = useState([]);
@@ -23,28 +25,32 @@ export default function PlaceCard() {
         <>
         {cards.map((card) => (
           <div className="place-card" key={card.id}>
-            <div className="place-card__name">{card.name}</div>
-            <div className="place-card__ratingreview">
-              <div className="place-card__rating">
-                <Rating
-                fillColor='#FF3333'
-                size={22}
-                initialValue={card.rating}
-                onClick={function noRefCheck(){}}
-                readonly
-                /> 
+              <div className="place-card__nameicons">
+                  <div className="place-card__name">{card.name}</div>
+                  <img className="place-card__icon" src={edit}></img>
+                  <img className="place-card__icon" src={del}></img>
               </div>
-              <div className="place-card__review">(Отзывов:{card.review})</div>
+              <div className="place-card__ratingreview">
+                  <div className="place-card__rating">
+                    <Rating
+                    fillColor='#FF3333'
+                    size={18}
+                    initialValue={card.rating}
+                    onClick={function noRefCheck(){}}
+                    readonly
+                  /> 
+                  </div>
+                  <div className="place-card__review">(Отзывов:{card.review})</div>
             </div>
             <div className="place-card__check">
-              Средний чек: 
-              <span className="place-card__sum">
+                <span>Средний чек: </span>
+                <span className="place-card__sum">
                 {card.check} ₽ ({percent (card.check)}% стипендии)
-              </span>
+                </span>
             </div>
             <div className="place-card__categoryaddress">
-              <div className="place-card__category">{card.category},</div>
-              <div className="place-card__address">{card.address}</div>
+                 <div className="place-card__category">{card.category},</div>
+                 <div className="place-card__address">{card.address}</div>
             </div>
           </div>
         ))}
