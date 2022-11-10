@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
-export default function Header() {
-    const [scholarshipValue, setScholarship] = useState('2000')
-    const handleChangeScholarship = (value) => {
-        setScholarship(value)
-    }
+export function Percent ({check}) {
+   const scholarship = document.getElementById("scholarship").value;
+    return parseInt(check*100/scholarship)
+   } 
 
+export function Header() {
+    const [scholarshipValue, setScholarship] = useState('2000')
+     
     return (
         <header className="header">
             <div className="header__link">
