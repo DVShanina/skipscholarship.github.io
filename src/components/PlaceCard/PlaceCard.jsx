@@ -4,13 +4,13 @@ import { Rating } from 'react-simple-star-rating'
 import Icons from "../Icon/Icons";
 import { Percent } from "../Header/Header";
 
-export default function PlaceCard({id, name, rating, review, check, category, address}) {
+export default function PlaceCard({card}) {
     
    return (
         <>
-         <div className="place-card" key={id}>
+         <div className="place-card">
               <div className="place-card__nameicons">
-                  <div className="place-card__name">{name}</div>
+                  <div className="place-card__name">{card.name}</div>
                   <div className="place-card__icon">
                   <Icons name='edit' size='14'/>         
                   </div>
@@ -23,21 +23,21 @@ export default function PlaceCard({id, name, rating, review, check, category, ad
                     <Rating
                     fillColor='#FF3333'
                     size={18}
-                    initialValue={rating}
+                    initialValue={card.rating}
                     readonly
                   /> 
                   </div>
-                  <div className="place-card__review">(Отзывов:{review})</div>
+                  <div className="place-card__review">(Отзывов:{card.review})</div>
             </div>
             <div className="place-card__check">
                 <span>Средний чек: </span>
                 <span className="place-card__sum">
-                {check} ₽ <Percent check={check}/> % стипендии)
+                {card.check} ₽ (<Percent check={card.check}/> % стипендии)
                 </span>
             </div>
             <div className="place-card__categoryaddress">
-                 <div className="place-card__category">{category},</div>
-                 <div className="place-card__address">{address}</div>
+                 <div className="place-card__category">{card.category},</div>
+                 <div className="place-card__address">{card.address}</div>
             </div>
           </div>
         

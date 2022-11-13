@@ -20,13 +20,7 @@ export default function PlaceList() {
   {cards.map((card) => (
   <PlaceCard
   key={card.id} 
-  id={card.id}
-  name={card.name}
-  rating={card.rating}
-  review={card.review}
-  check={card.check}
-  category={card.category}
-  address={card.address}
+  card = {card}
   />
   ))}
     </>
