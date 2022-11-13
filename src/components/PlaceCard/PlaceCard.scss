@@ -1,0 +1,64 @@
+@import "/src/scss/variables.scss";
+
+.place-card {
+    width: 88%;
+    height: 112px;
+    border: 1px solid $color-border-gray;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: $line-height;
+    background-color: white;
+    cursor: pointer;
+    &__nameicons {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px; 
+        gap: 7px;
+    }
+    &__name {
+        font-size: 18px;
+        flex-grow: 1; 
+    }
+    &__icon{
+        margin-left: auto;
+        opacity: 0;
+    }
+    &__ratingreview {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__rating {
+        color: $color-midle-gray; 
+    }
+    &__review {
+        color: $color-midle-gray;
+        padding-bottom: 2px;
+    }
+    &__check {
+        color: $color-midle-gray; 
+    }
+    &__sum{
+        color: black;
+    }
+    &__categoryaddress {
+        display: flex;
+        gap:5px;
+    }
+    &__category {
+        color: $color-midle-gray; 
+    }
+}
+
+.place-card:hover {
+    border-color: $color-midle-gray;
+   .place-card__icon {
+    opacity: 1;
+} 
+}
+
+
+
+

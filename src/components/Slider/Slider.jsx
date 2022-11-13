@@ -9,7 +9,7 @@ export default function Slider() {
 }
 return(
 <>
-<span>
+<span className="filters__label">
 Сколько: {value[0]}% - {value[1]}% стипендии
 </span>
 <div>
@@ -22,7 +22,6 @@ return(
  ariaLabel={['Lower thumb', 'Upper thumb']}
  ariaValuetext={state => `Сколько: ${state.valueNow}`}
  onChange={setSliderPosition}
-//  renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
  pearling
  minDistance={10}
   />

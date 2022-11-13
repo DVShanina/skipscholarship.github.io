@@ -24,6 +24,7 @@
         justify-content: center;
         gap: 5px;
         padding: 0 5px 0 5px;
+        margin-left: auto;
         }
     &__input {
         background: $color-blue;
@@ -36,7 +37,7 @@
         width: 22%;
         height: 48px;
         padding: 0 10px 0 10px;
-    }
+        }
     &__button {
         background: $color-blue;
         line-height: $line-height;
@@ -50,4 +51,6 @@
         cursor: pointer;
     }
     }
-    
+    #scholarship:focus {
+        outline: 0px;
+    }

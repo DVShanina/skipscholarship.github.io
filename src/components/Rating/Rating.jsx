@@ -6,16 +6,15 @@ export default function RatingStars() {
     const handleChangeRating = (rate) => {
     setRating(rate)
     }
-    
+     
     return (
       <>
-      <span>Как:</span>
       <div className="filters__range">
           <Rating
           onClick={setRating}
           fillColor='#FF3333'
           size={22}
-        />
+      />
       </div>
       </>
     )

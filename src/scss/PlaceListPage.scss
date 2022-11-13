@@ -1,0 +1,87 @@
+@import "/src/scss/variables.scss";
+
+.filters {
+    display: flex;
+    height: 120px;
+    border-bottom: 1px solid $color-light-gray;
+    align-items: center; 
+    padding: 0 5%;
+    font-size: $text-size;  
+    color: $color-gray;
+    gap: 30px;
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 58px;
+    }    
+    &__rating{
+        width: 260px;
+        height: 58px;
+    }
+    &__place{
+        height: 58px;
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+    }
+    &__select {
+        height: 32px;
+        border: 1px solid $color-midle-gray;
+        font-size: $text-size;
+        font-family: $main-font;
+        padding: 0 10px;
+    }    
+    &__range {
+        padding-top: 13px;
+    }      
+    &__label {
+        margin-bottom: 8px;
+    }                                                                        
+   }
+
+.place-list {
+    display: flex;
+    background-color: #FBFBFB;
+    padding:0 5% 10px;
+    flex-direction: column;
+    &__info {
+        display: flex;
+        font-size: $text-size;
+        font-family: $main-font;
+        color: $color-gray;
+        width: 100%;
+        height: 65px;
+        align-items: center;
+    }
+    &__location {
+       display: flex;
+       flex-grow: 1;
+       gap: 5px;
+    }
+    &__map{
+        flex-grow: 1;
+        width: 100%;
+        border: 1px solid $color-border-gray;
+    }
+    &__scroll {
+        height: 590px;
+        width: 423px;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        overflow-y: scroll;
+        padding: 0 9px 0 9px;
+        border-top: 1px solid $color-border-gray;
+        border-bottom: 1px solid $color-border-gray;
+    }
+   }
+
+.place-list__scroll::-webkit-scrollbar {
+   width: 8px;     
+}
+.place-list__scroll::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, 0.2);
+    height: 288px;
+}
+
